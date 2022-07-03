@@ -1,4 +1,4 @@
-package com.example.amogus;
+package com.example.amogus.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -6,6 +6,8 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.amogus.R;
 
 public class IntroActivity extends AppCompatActivity {
 
