@@ -63,7 +63,7 @@ public class ManagementCart {
         ArrayList<ElectronicDomain> listElectronic2 = getListCart();
         double fee = 0;
         for (int i = 0; i < listElectronic2.size(); i++)
-            fee = fee + (listElectronic2.get(i).getFee() + listElectronic2.get(i).getNumberInCart());
+            fee = fee + (listElectronic2.get(i).getFee() * listElectronic2.get(i).getNumberInCart());
         return fee;
     }
 }
