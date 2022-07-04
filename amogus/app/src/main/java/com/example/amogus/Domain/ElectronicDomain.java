@@ -2,24 +2,24 @@ package com.example.amogus.Domain;
 
 import java.io.Serializable;
 
-public class FoodDomain implements Serializable {
+public class ElectronicDomain implements Serializable {
     private String title;
     private String pic;
     private String description;
     private Double fee;
     private int star;
     private int time;
-    private int calories;
+    private int hot;
     private int numberInCart;
 
-    public FoodDomain(String title, String pic, String description, Double fee, int star, int time, int calories) {
+    public ElectronicDomain(String title, String pic, String description, Double fee, int star, int time, int hot) {
         this.title = title;
         this.pic = pic;
         this.description = description;
         this.fee = fee;
         this.star = star;
         this.time = time;
-        this.calories = calories;
+        this.hot = hot;
     }
 
     public int getNumberInCart() {
@@ -78,11 +78,11 @@ public class FoodDomain implements Serializable {
         this.time = time;
     }
 
-    public int getCalories() {
-        return calories;
+    public int getHot() {
+        return hot;
     }
 
-    public void setCalories(int calories) {
-        this.calories = calories;
+    public void setHot(int hot) {
+        this.hot = hot;
     }
 }

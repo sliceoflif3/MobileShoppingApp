@@ -1,6 +1,5 @@
 package com.example.amogus.Adapter;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,21 +8,19 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.amogus.Activity.ShowDetailActivity;
-import com.example.amogus.Domain.FoodDomain;
-import com.example.amogus.Helper.ManagementCart;
+import com.example.amogus.Domain.ElectronicDomain;
 import com.example.amogus.R;
 
 import java.util.ArrayList;
 
 public class RecommendedAdapter extends RecyclerView.Adapter<RecommendedAdapter.ViewHolder>{
-    ArrayList<FoodDomain> RecommendedDomains;
+    ArrayList<ElectronicDomain> RecommendedDomains;
 
-    public RecommendedAdapter(ArrayList<FoodDomain> RecommendedDomains) {
+    public RecommendedAdapter(ArrayList<ElectronicDomain> RecommendedDomains) {
         this.RecommendedDomains = RecommendedDomains;
     }
 

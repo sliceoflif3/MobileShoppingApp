@@ -22,10 +22,10 @@
 
             <ImageView
                 android:id="@+id/foodPic"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="367dp"
+                android:layout_height="286dp"
                 android:layout_margin="24dp"
-                app:srcCompat="@drawable/burger_large" />
+                app:srcCompat="@drawable/burger" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -38,6 +38,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
+                    android:fontFamily="@font/avenir_black"
                     android:text="title"
                     android:textAlignment="center"
                     android:textColor="#373b54"
@@ -64,8 +65,8 @@
 
                         <ImageView
                             android:id="@+id/minusCardBtn"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
                             android:layout_marginStart="8dp"
                             android:layout_marginEnd="8dp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -76,8 +77,8 @@
 
                         <ImageView
                             android:id="@+id/plusCardBtn"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
                             android:layout_marginStart="8dp"
                             android:layout_marginEnd="8dp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -97,8 +98,8 @@
 
                             <ImageView
                                 android:id="@+id/imageView7"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
@@ -107,16 +108,20 @@
 
                             <TextView
                                 android:id="@+id/numberItemTxt"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:fontFamily="@font/avenir_book"
+                                android:gravity="center"
                                 android:text="1"
                                 android:textColor="#373b54"
                                 android:textSize="18sp"
                                 android:textStyle="bold"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="@+id/imageView7"
+                                app:layout_constraintHorizontal_bias="1.0"
                                 app:layout_constraintStart_toStartOf="@+id/imageView7"
-                                app:layout_constraintTop_toTopOf="parent" />
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -124,6 +129,7 @@
                         android:id="@+id/priceTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenir_book"
                         android:text="$0"
                         android:textColor="#000000"
                         android:textSize="20sp"
@@ -159,6 +165,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
+                            android:fontFamily="@font/avenir_book"
                             android:gravity="center_vertical"
                             android:paddingStart="8dp"
                             android:text="4.9"
@@ -185,6 +192,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
+                            android:fontFamily="@font/avenir_book"
                             android:gravity="center_vertical"
                             android:paddingStart="8dp"
                             android:text="20 min"
@@ -207,10 +215,11 @@
                             app:srcCompat="@drawable/flame" />
 
                         <TextView
-                            android:id="@+id/caloriesTxt"
+                            android:id="@+id/hotTxt"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
+                            android:fontFamily="@font/avenir_book"
                             android:gravity="center_vertical"
                             android:paddingStart="8dp"
                             android:text="70 Calories"
@@ -226,6 +235,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
+                    android:fontFamily="@font/avenir_roman"
                     android:text="Description"
                     android:textColor="#686868"
                     android:textSize="20sp" />
@@ -249,6 +259,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="8dp"
+                            android:fontFamily="@font/avenir_book"
                             android:text="Total Price"
                             android:textColor="#373b54"
                             android:textSize="15sp"
@@ -260,6 +271,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
+                            android:fontFamily="@font/avenir_book"
                             android:text="$19.50"
                             android:textColor="#000000"
                             android:textSize="23sp"
@@ -278,6 +290,7 @@
                         android:drawableStart="@drawable/cart_white"
                         android:drawablePadding="5dp"
                         android:elevation="3dp"
+                        android:fontFamily="@font/avenir_book"
                         android:gravity="center"
                         android:padding="8dp"
                         android:text="Add to Cart"

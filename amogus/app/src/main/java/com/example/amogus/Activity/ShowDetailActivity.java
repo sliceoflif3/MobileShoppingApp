@@ -8,15 +8,15 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.example.amogus.Domain.FoodDomain;
+import com.example.amogus.Domain.ElectronicDomain;
 import com.example.amogus.Helper.ManagementCart;
 import com.example.amogus.R;
 
 public class ShowDetailActivity extends AppCompatActivity {
     private TextView addToCartBtn;
-    private TextView titleTxt, feeTxt, descriptionTxt, numberOrderTxt, totalPriceTxt, starTxt, caloriesTxt, timeTxt;
+    private TextView titleTxt, feeTxt, descriptionTxt, numberOrderTxt, totalPriceTxt, starTxt, hotTxt, timeTxt;
     private ImageView plusBtn, minusBtn, picFood;
-    private FoodDomain object;
+    private ElectronicDomain object;
     private int numberOrder=1;
     private ManagementCart managementCart;
     @Override
@@ -31,7 +31,7 @@ public class ShowDetailActivity extends AppCompatActivity {
     }
 
     private void getBundle() {
-        object = (FoodDomain)getIntent().getSerializableExtra("object");
+        object = (ElectronicDomain)getIntent().getSerializableExtra("object");
 
         int drawableResourceId = this.getResources().getIdentifier(object.getPic(),"drawable",
                 this.getPackageName());
@@ -41,9 +41,9 @@ public class ShowDetailActivity extends AppCompatActivity {
         feeTxt.setText("$"+object.getFee());
         descriptionTxt.setText(object.getDescription());
         numberOrderTxt.setText(String.valueOf(numberOrder));
-        caloriesTxt.setText(object.getCalories()+" Calories");
+        hotTxt.setText("Only "+object.getHot()+" left!");
         starTxt.setText(object.getStar()+"");
-        timeTxt.setText(object.getTime()+" minutes");
+        timeTxt.setText("Shipping takes "+ object.getTime()+" minutes");
         totalPriceTxt.setText("$"+Math.round(numberOrder*object.getFee()));
 
         plusBtn.setOnClickListener(new View.OnClickListener() {
@@ -86,7 +86,7 @@ public class ShowDetailActivity extends AppCompatActivity {
         picFood=findViewById(R.id.foodPic);
         totalPriceTxt=findViewById(R.id.totalPricetxt);
         starTxt=findViewById(R.id.starTxt);
-        caloriesTxt=findViewById(R.id.caloriesTxt);
+        hotTxt =findViewById(R.id.hotTxt);
         timeTxt=findViewById(R.id.timeTxt);
     }
 }

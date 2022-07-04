@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.amogus.Domain.FoodDomain;
+import com.example.amogus.Domain.ElectronicDomain;
 import com.example.amogus.Helper.ManagementCart;
 import com.example.amogus.Interface.ChangeNumberItemsListener;
 import com.example.amogus.R;
@@ -19,12 +19,12 @@ import com.example.amogus.R;
 import java.util.ArrayList;
 
 public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.ViewHolder> {
-    ArrayList<FoodDomain> listFoodSelected;
+    ArrayList<ElectronicDomain> listFoodSelected;
     private ManagementCart managementCart;
     ChangeNumberItemsListener changeNumberItemsListener;
 
 
-    public CartListAdapter(ArrayList<FoodDomain> listFoodSelected, Context context, ChangeNumberItemsListener changeNumberItemsListener) {
+    public CartListAdapter(ArrayList<ElectronicDomain> listFoodSelected, Context context, ChangeNumberItemsListener changeNumberItemsListener) {
         this.listFoodSelected = listFoodSelected;
         managementCart = new ManagementCart(context);
         this.changeNumberItemsListener = changeNumberItemsListener;

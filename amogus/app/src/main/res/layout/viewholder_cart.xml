@@ -14,6 +14,7 @@
         android:id="@+id/totalEachItem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/avenir_black"
         android:text="$0"
         android:textColor="#373b54"
         android:textSize="18sp"
@@ -27,12 +28,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
+        android:fontFamily="@font/avenir_book"
         android:text="$0"
         android:textColor="#373b54"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/titleTxt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/titleTxt" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/titleTxt"
+        app:layout_constraintTop_toTopOf="@+id/titleTxt"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/pic"
@@ -50,6 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/avenir_black"
         android:text="title"
         android:textColor="#373b54"
         android:textSize="18sp"
@@ -68,8 +74,8 @@
 
         <ImageView
             android:id="@+id/minusCardBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -80,8 +86,8 @@
 
         <ImageView
             android:id="@+id/plusCardBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -101,8 +107,8 @@
 
             <ImageView
                 android:id="@+id/imageView7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -113,6 +119,7 @@
                 android:id="@+id/numberItemTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/avenir_book"
                 android:text="1"
                 android:textColor="#373b54"
                 android:textSize="18sp"

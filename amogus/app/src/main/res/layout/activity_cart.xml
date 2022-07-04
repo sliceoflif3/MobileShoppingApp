@@ -10,11 +10,13 @@
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,10 +28,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
+                android:fontFamily="@font/avenir_black"
                 android:paddingStart="16dp"
                 android:text="My Cart"
                 android:textAlignment="viewStart"
-                android:textColor="#ff3d00"
+                android:textColor="#000000"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -60,6 +63,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/avenir_black"
                         android:text="Items Total:"
                         android:textColor="#373b54"
                         android:textSize="18sp"
@@ -69,6 +73,7 @@
                         android:id="@+id/totalFeeTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenir_black"
                         android:text="$0"
                         android:textColor="#373b54"
                         android:textSize="18sp"
@@ -89,6 +94,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/avenir_black"
                         android:text="Delivery Services:"
                         android:textColor="#373b54"
                         android:textSize="18sp"
@@ -98,6 +104,7 @@
                         android:id="@+id/deliveryTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenir_black"
                         android:text="$0"
                         android:textColor="#373b54"
                         android:textSize="18sp"
@@ -118,6 +125,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/avenir_black"
                         android:text="Tax:"
                         android:textColor="#373b54"
                         android:textSize="18sp"
@@ -127,6 +135,7 @@
                         android:id="@+id/taxTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenir_black"
                         android:text="$0"
                         android:textColor="#373b54"
                         android:textSize="18sp"
@@ -157,6 +166,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/avenir_black"
                         android:text="Total:"
                         android:textColor="#373b54"
                         android:textSize="30sp"
@@ -166,6 +176,7 @@
                         android:id="@+id/totalTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenir_black"
                         android:text="$0"
                         android:textColor="#373b54"
                         android:textSize="30sp"
@@ -177,13 +188,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_margin="16dp"
-                android:background="@drawable/yellow_btn_background">
+                android:background="@drawable/white_button">
 
                 <TextView
                     android:id="@+id/textView16"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="CheckOut"
+                    android:fontFamily="@font/avenir_black"
+                    android:text="Check Out"
                     android:textColor="#ffffff"
                     android:textSize="25sp"
                     android:textStyle="bold"
@@ -245,17 +257,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/bottom_btn1" />
+                        app:srcCompat="@drawable/bottom_btn1"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"/>
 
-                    <TextView
-                        android:id="@+id/textViewHome"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Home"
-                        android:textAlignment="center"
-                        android:textColor="#676767"
-                        android:textSize="12sp" />
+
                 </LinearLayout>
+
+
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -264,67 +273,16 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/Profile"
+                        android:id="@+id/Map"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/bottom_btn2" />
+                        app:srcCompat="@drawable/bottom_btn3"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"/>
 
-                    <TextView
-                        android:id="@+id/textViewProfile"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Profile"
-                        android:textAlignment="center"
-                        android:textColor="#676767"
-                        android:textSize="12sp" />
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.2"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/Support"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/bottom_btn3" />
-
-                    <TextView
-                        android:id="@+id/textViewSupport"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Support"
-                        android:textAlignment="center"
-                        android:textColor="#676767"
-                        android:textSize="12sp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.2"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/Setting"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        app:srcCompat="@drawable/bottom_btn4" />
-
-                    <TextView
-                        android:id="@+id/textViewSetting"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Setting"
-                        android:textAlignment="center"
-                        android:textColor="#676767"
-                        android:textSize="12sp" />
-                </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/cartBtn"
@@ -338,16 +296,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/bottom_btn5" />
+                        app:srcCompat="@drawable/bottom_btn5"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"/>
 
-                    <TextView
-                        android:id="@+id/textViewCart"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Cart"
-                        android:textAlignment="center"
-                        android:textColor="#676767"
-                        android:textSize="12sp" />
+
                 </LinearLayout>
             </LinearLayout>
 

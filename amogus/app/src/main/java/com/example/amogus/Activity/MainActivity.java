@@ -12,10 +12,9 @@ import android.widget.LinearLayout;
 import com.example.amogus.Adapter.CategoryAdapter;
 import com.example.amogus.Adapter.RecommendedAdapter;
 import com.example.amogus.Domain.CategoryDomain;
-import com.example.amogus.Domain.FoodDomain;
+import com.example.amogus.Domain.ElectronicDomain;
 import com.example.amogus.R;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -55,18 +54,18 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewPopularList = findViewById(R.id.view2);
         recyclerViewPopularList.setLayoutManager(linearLayoutManager);
 
-        ArrayList<FoodDomain> foodList = new ArrayList<>();
-        foodList.add(new FoodDomain("Pepperoni pizza","pizza1",
-                "Sliced pepperoni, Mozzarella cheese, fresh oregano",
+        ArrayList<ElectronicDomain> electronicList = new ArrayList<>();
+        electronicList.add(new ElectronicDomain("Akko Tokyo","pizza1",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium fusce id.",
                 13.0,5,11,1000));
-        foodList.add(new FoodDomain("Cheese Burger","burger",
-                "Sliced pepperoni, Mozzarella cheese, fresh oregano",
+        electronicList.add(new ElectronicDomain("Macbook Pro","burger",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium fusce id.",
                 13.0,5,12,1000));
-        foodList.add(new FoodDomain("Vegetable pizza","pizza3",
-                "Sliced pepperoni, Mozzarella cheese, fresh oregano",
+        electronicList.add(new ElectronicDomain("Sony XM5","pizza3",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tempor nec feugiat nisl pretium fusce id.",
                 13.0,5,14,1000));
 
-        adapter2 = new RecommendedAdapter(foodList);
+        adapter2 = new RecommendedAdapter(electronicList);
         recyclerViewPopularList.setAdapter(adapter2);
 
     }
@@ -77,11 +76,11 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewCategoryList.setLayoutManager(linearLayoutManager);
 
         ArrayList<CategoryDomain> categoryList = new ArrayList<>();
-        categoryList.add(new CategoryDomain("Pizza","cat_1"));
-        categoryList.add(new CategoryDomain("Burger","cat_2"));
-        categoryList.add(new CategoryDomain("Hotdog","cat_3"));
-        categoryList.add(new CategoryDomain("Drink","cat_4"));
-        categoryList.add(new CategoryDomain("Donut","cat_5"));
+        categoryList.add(new CategoryDomain("Laptop","cat_1"));
+        categoryList.add(new CategoryDomain("PC","cat_2"));
+        categoryList.add(new CategoryDomain("Keyboard","cat_3"));
+        categoryList.add(new CategoryDomain("Mouse","cat_4"));
+        categoryList.add(new CategoryDomain("Headphone","cat_5"));
 
         adapter = new CategoryAdapter(categoryList);
         recyclerViewCategoryList.setAdapter(adapter);
