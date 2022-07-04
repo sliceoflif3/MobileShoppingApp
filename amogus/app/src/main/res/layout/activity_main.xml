@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ECEBE6"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     tools:context=".Activity.MainActivity">
 
     <ScrollView
@@ -330,6 +332,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/cartBtn"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.2"

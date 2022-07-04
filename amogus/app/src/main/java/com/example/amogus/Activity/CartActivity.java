@@ -4,12 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import com.example.amogus.Adapter.CardListAdapter;
+import com.example.amogus.Adapter.CartListAdapter;
 import com.example.amogus.Helper.ManagementCart;
 import com.example.amogus.Interface.ChangeNumberItemsListener;
 import com.example.amogus.R;
@@ -31,12 +33,33 @@ public class CartActivity extends AppCompatActivity {
 
         initView();
         initList();
+        bottomNavigation();
+        calculateCard();
+    }
+
+    private void bottomNavigation() {
+        LinearLayout homeBtn = findViewById(R.id.homeBtn);
+        LinearLayout cartBtn = findViewById(R.id.cartBtn);
+
+        homeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CartActivity.this,MainActivity.class));
+            }
+        });
+
+        cartBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CartActivity.this, CartActivity.class));
+            }
+        });
     }
 
     private void initList() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         recyclerViewList.setLayoutManager(linearLayoutManager);
-        adapter = new CardListAdapter(managementCart.getListCart(), this, new ChangeNumberItemsListener() {
+        adapter = new CartListAdapter(managementCart.getListCart(), this, new ChangeNumberItemsListener() {
             @Override
             public void changed() {
                 calculateCard();

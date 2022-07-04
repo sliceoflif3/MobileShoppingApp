@@ -1,5 +1,7 @@
 package com.example.amogus.Adapter;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +13,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.amogus.Activity.ShowDetailActivity;
 import com.example.amogus.Domain.FoodDomain;
 import com.example.amogus.R;
 
@@ -43,6 +46,15 @@ public class RecommendedAdapter extends RecyclerView.Adapter<RecommendedAdapter.
 
         Glide.with(holder.itemView.getContext()).
                 load(drawableResourceID).into(holder.pic);
+
+        holder.addBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(holder.itemView.getContext(),ShowDetailActivity.class);
+                intent.putExtra("object",RecommendedDomains.get(holder.getAdapterPosition()));
+                holder.itemView.getContext().startActivity(intent);
+            }
+        });
 
     }
 
