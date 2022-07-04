@@ -58,13 +58,13 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<FoodDomain> foodList = new ArrayList<>();
         foodList.add(new FoodDomain("Pepperoni pizza","pizza1",
                 "Sliced pepperoni, Mozzarella cheese, fresh oregano",
-                13.0,5,20,1000));
+                13.0,5,11,1000));
         foodList.add(new FoodDomain("Cheese Burger","burger",
                 "Sliced pepperoni, Mozzarella cheese, fresh oregano",
-                13.0,5,20,1000));
+                13.0,5,12,1000));
         foodList.add(new FoodDomain("Vegetable pizza","pizza3",
                 "Sliced pepperoni, Mozzarella cheese, fresh oregano",
-                13.0,5,20,1000));
+                13.0,5,14,1000));
 
         adapter2 = new RecommendedAdapter(foodList);
         recyclerViewPopularList.setAdapter(adapter2);
