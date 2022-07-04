@@ -12,9 +12,9 @@ public class ManagementCart {
     private Context context;
     private TinyDB tinyDB;
 
-    public ManagementCart(Context context, TinyDB tinyDB) {
+    public ManagementCart(Context context) {
         this.context = context;
-        this.tinyDB = tinyDB;
+        this.tinyDB = new TinyDB(context);
     }
     public void insertFood (FoodDomain item) {
         ArrayList<FoodDomain> listFood=getListCart();
@@ -39,7 +39,7 @@ public class ManagementCart {
 
     }
 
-    private ArrayList<FoodDomain> getListCart() {
+    public ArrayList<FoodDomain> getListCart() {
         return tinyDB.getListObject("CardList");
     }
 

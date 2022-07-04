@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/C++/MidtermMobile/amogus/app/src/main/res/layout/activity_cart.xml" value="0.25104166666666666" />
-        <entry key="..\:/C++/MidtermMobile/amogus/app/src/main/res/layout/activity_main.xml" value="0.1762917933130699" />
+        <entry key="..\:/C++/MidtermMobile/amogus/app/src/main/res/drawable/card_background.xml" value="0.292" />
+        <entry key="..\:/C++/MidtermMobile/amogus/app/src/main/res/drawable/yellow_bar.xml" value="0.3625" />
+        <entry key="..\:/C++/MidtermMobile/amogus/app/src/main/res/drawable/yellow_btn_background.xml" value="0.292" />
+        <entry key="..\:/C++/MidtermMobile/amogus/app/src/main/res/layout/activity_cart.xml" value="0.22" />
+        <entry key="..\:/C++/MidtermMobile/amogus/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/C++/MidtermMobile/amogus/app/src/main/res/layout/viewholder_cart.xml" value="0.33" />
         <entry key="..\:/OneDrive - VNU-HCMUS/2nd year/Sem3/Mobile/Midterm/MidtermMobile/amogus/app/src/main/res/drawable/background_category.xml" value="0.2145" />
         <entry key="..\:/OneDrive - VNU-HCMUS/2nd year/Sem3/Mobile/Midterm/MidtermMobile/amogus/app/src/main/res/drawable/orange_background.xml" value="0.2" />
         <entry key="..\:/OneDrive - VNU-HCMUS/2nd year/Sem3/Mobile/Midterm/MidtermMobile/amogus/app/src/main/res/drawable/search_edit_background.xml" value="0.6" />
