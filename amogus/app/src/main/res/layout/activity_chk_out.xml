@@ -59,6 +59,7 @@
                 android:textStyle="normal" />
 
             <LinearLayout
+                android:id="@+id/ctnBtn"
                 android:layout_width="match_parent"
                 android:layout_height="81dp"
                 android:layout_marginTop="100dp"

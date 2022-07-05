@@ -66,4 +66,8 @@ public class ManagementCart {
             fee = fee + (listElectronic2.get(i).getFee() * listElectronic2.get(i).getNumberInCart());
         return fee;
     }
+
+    public void clear() {
+        tinyDB.clear();
+    }
 }

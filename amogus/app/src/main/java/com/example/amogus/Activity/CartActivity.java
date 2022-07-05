@@ -68,6 +68,7 @@ public class CartActivity extends AppCompatActivity {
         chkOutBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                managementCart.clear();
                 startActivity(new Intent(CartActivity.this, ChkOutActivity.class));
             }
         });
