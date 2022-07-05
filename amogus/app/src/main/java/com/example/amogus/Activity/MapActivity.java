@@ -62,7 +62,7 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
         LatLng TheGioiDiDongShowRoom3 = new LatLng(10.75983938492402, 106.66925599094226);
         map.addMarker(new MarkerOptions().position(TheGioiDiDongShowRoom3).title("THEGIOIDIDONG"));
 
-        float zoom = 9;
+        float zoom = 10;
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(GearVNShowRoom1, zoom));
     }
 }

@@ -185,13 +185,13 @@
             </LinearLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/chkOutBtn"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_margin="16dp"
                 android:background="@drawable/white_button">
 
                 <TextView
-                    android:id="@+id/textView16"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/avenir_black"

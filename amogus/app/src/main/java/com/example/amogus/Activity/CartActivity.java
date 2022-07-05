@@ -1,6 +1,7 @@
 package com.example.amogus.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -40,11 +41,20 @@ public class CartActivity extends AppCompatActivity {
     private void bottomNavigation() {
         LinearLayout homeBtn = findViewById(R.id.homeBtn);
         LinearLayout cartBtn = findViewById(R.id.cartBtn);
+        LinearLayout mapBtn = findViewById(R.id.mapBtn);
+        ConstraintLayout chkOutBtn = findViewById(R.id.chkOutBtn);
 
         homeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(CartActivity.this,MainActivity.class));
+                startActivity(new Intent(CartActivity.this, MainActivity.class));
+            }
+        });
+
+        mapBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CartActivity.this, MapActivity.class));
             }
         });
 
@@ -52,6 +62,13 @@ public class CartActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(CartActivity.this, CartActivity.class));
+            }
+        });
+
+        chkOutBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CartActivity.this, ChkOutActivity.class));
             }
         });
     }

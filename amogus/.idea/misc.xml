@@ -6,11 +6,14 @@
         <entry key="..\:/C++/MidtermMobile/amogus/app/src/main/res/drawable/card_background.xml" value="0.292" />
         <entry key="..\:/C++/MidtermMobile/amogus/app/src/main/res/drawable/yellow_bar.xml" value="0.3625" />
         <entry key="..\:/C++/MidtermMobile/amogus/app/src/main/res/drawable/yellow_btn_background.xml" value="0.292" />
-        <entry key="..\:/C++/MidtermMobile/amogus/app/src/main/res/layout/activity_cart.xml" value="0.22" />
+        <entry key="..\:/C++/MidtermMobile/amogus/app/src/main/res/layout/activity_cart.xml" value="0.33" />
+        <entry key="..\:/C++/MidtermMobile/amogus/app/src/main/res/layout/activity_chk_out.xml" value="0.25" />
+        <entry key="..\:/C++/MidtermMobile/amogus/app/src/main/res/layout/activity_intro.xml" value="0.25104166666666666" />
         <entry key="..\:/C++/MidtermMobile/amogus/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/C++/MidtermMobile/amogus/app/src/main/res/layout/activity_map.xml" value="0.278125" />
         <entry key="..\:/C++/MidtermMobile/amogus/app/src/main/res/layout/activity_show_detail.xml" value="0.3625" />
         <entry key="..\:/C++/MidtermMobile/amogus/app/src/main/res/layout/viewholder_cart.xml" value="0.33" />
+        <entry key="..\:/C++/MidtermMobile/amogus/app/src/main/res/layout/viewholder_category.xml" value="0.3625" />
         <entry key="..\:/C++/MidtermMobile/amogus/app/src/main/res/layout/viewholder_recommended.xml" value="0.3625" />
         <entry key="..\:/C++/MidtermMobile/amogus/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22" />
         <entry key="..\:/C++/MidtermMobile/amogus/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.22" />
