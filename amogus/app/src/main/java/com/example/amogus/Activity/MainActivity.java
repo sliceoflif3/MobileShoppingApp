@@ -32,12 +32,20 @@ public class MainActivity extends AppCompatActivity {
 
     private void bottomNavigation() {
         LinearLayout homeBtn = findViewById(R.id.homeBtn);
+        LinearLayout mapBtn = findViewById(R.id.mapBtn);
         LinearLayout cartBtn = findViewById(R.id.cartBtn);
 
         homeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,MainActivity.class));
+            }
+        });
+
+        mapBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MapActivity.class));
             }
         });
 

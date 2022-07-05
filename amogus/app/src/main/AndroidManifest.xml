@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.amogus">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +17,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Amogus"
         tools:targetApi="31">
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key"/>
+
+        <activity
+            android:name=".Activity.MapActivity"
+            android:exported="false" />
         <activity
             android:name=".Activity.ShowDetailActivity"
             android:exported="false" />
