@@ -10,13 +10,28 @@
 
     <ImageView
         android:id="@+id/addBtn"
-        android:layout_width="133dp"
-        android:layout_height="172dp"
+        android:layout_width="158dp"
+        android:layout_height="194dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/roundedcorner" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/avenir_book"
+        android:text="title"
+        android:textColor="#373B54"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/pic"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/pic"
+        app:layout_constraintTop_toBottomOf="@+id/pic" />
 
     <TextView
         android:id="@+id/fee"
@@ -31,14 +46,14 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintHorizontal_bias="0.318"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
 
     <ImageView
         android:id="@+id/pic"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
@@ -46,19 +61,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/burger" />
-
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/avenir_book"
-        android:text="title"
-        android:textColor="#373B54"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/pic"
-        app:layout_constraintStart_toStartOf="@+id/pic"
-        app:layout_constraintTop_toBottomOf="@+id/pic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

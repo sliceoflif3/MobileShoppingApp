@@ -129,7 +129,7 @@
                     android:drawableStart="@drawable/search"
                     android:drawablePadding="10dp"
                     android:ems="10"
-                    android:hint="Search for your favorite food"
+                    android:hint="Looking for something?"
                     android:inputType="textPersonName"
                     android:paddingStart="20dp"
                     android:textStyle="italic"

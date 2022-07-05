@@ -34,7 +34,7 @@ public class RecommendedAdapter extends RecyclerView.Adapter<RecommendedAdapter.
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.title.setText(RecommendedDomains.get(position).getTitle());
-        holder.fee.setText(String.valueOf(RecommendedDomains.get(position).getFee()));
+        holder.fee.setText("$"+String.valueOf(RecommendedDomains.get(position).getFee()));
         String picUrl ="";
 
 

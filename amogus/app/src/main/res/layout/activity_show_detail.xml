@@ -56,7 +56,6 @@
                         android:id="@+id/constraintLayout3"
                         android:layout_width="140dp"
                         android:layout_height="40dp"
-                        android:background="@drawable/yellow_bar"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="1.0"
@@ -156,8 +155,8 @@
 
                         <ImageView
                             android:id="@+id/imageView8"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
                             app:srcCompat="@drawable/star" />
 
                         <TextView
@@ -183,8 +182,8 @@
 
                         <ImageView
                             android:id="@+id/imageView8"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
                             app:srcCompat="@drawable/chronometer" />
 
                         <TextView
@@ -210,8 +209,8 @@
 
                         <ImageView
                             android:id="@+id/imageView8"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
                             app:srcCompat="@drawable/flame" />
 
                         <TextView
@@ -286,7 +285,7 @@
                         android:layout_height="65dp"
                         android:layout_margin="8dp"
                         android:layout_weight="0.5"
-                        android:background="@drawable/yellow_btn_background"
+                        android:background="@drawable/white_button"
                         android:drawableStart="@drawable/cart_white"
                         android:drawablePadding="5dp"
                         android:elevation="3dp"
