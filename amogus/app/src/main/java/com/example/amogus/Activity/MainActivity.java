@@ -19,6 +19,8 @@ import com.example.amogus.R;
 
 import java.util.ArrayList;
 
+//
+
 public class MainActivity extends AppCompatActivity {
     private RecyclerView.Adapter adapter, adapter2;
     private RecyclerView recyclerViewCategoryList, recyclerViewPopularList;
