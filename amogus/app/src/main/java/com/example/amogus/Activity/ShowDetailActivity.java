@@ -42,7 +42,7 @@ public class ShowDetailActivity extends AppCompatActivity {
         descriptionTxt.setText(object.getDescription());
         numberOrderTxt.setText(String.valueOf(numberOrder));
         hotTxt.setText("Only "+object.getHot()+" left!");
-        starTxt.setText(object.getStar()+"");
+        starTxt.setText(object.getStar()+" stars");
         timeTxt.setText("Shipping takes "+ object.getTime()+" minutes");
         totalPriceTxt.setText("$"+Math.round(numberOrder*object.getFee()));
 
